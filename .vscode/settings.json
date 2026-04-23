@@ -1,28 +1,23 @@
 {
-    "files.eol": "\n",
-    "files.exclude": {
-        "**/bin": true,
-        "**/obj": true,
-        "**/.git": true
-    },
-    "search.exclude": {
-        "**/bin": true,
-        "**/obj": true
-    },
-    "omnisharp.enableRoslynAnalyzers": true,
-    "omnisharp.enableEditorConfigSupport": true,
-    "dotnet.defaultSolution": "QuantConnect.Lean.sln",
-    "editor.formatOnSave": true,
-    "editor.rulers": [
-        150
-    ],
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp",
-        "editor.tabSize": 4,
-        "editor.insertSpaces": true
-    },
-    "python.analysis.extraPaths": [
-        "./Algorithm.Python",
-        "/opt/miniconda3/lib/python3.11/site-packages",
-    ]
+  "search.exclude": {
+    "**/.sst": true
+  },
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }
